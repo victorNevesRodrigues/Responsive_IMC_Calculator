@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 110vh;
+    width: 100vw;
+    background-color: #aaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.843);
+    width: 50%;
+    height: 96%;
+    border-radius: 1rem;
+}
+
+.container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0.8rem 0 1rem;
+
+}
+
+.imcTableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.imc {
+    height: 100%;
+    margin-right: 6vw;
+}
+
+.imcCalculator h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 2rem;
+    margin: 0.5rem 0 0.5rem 10%;
+}
+
+form input, form button {
+    margin: auto;
+    padding: 1.2rem 0 1rem 1rem;
+    width: 80%;
+    outline: 0;
+    border: 0.1rem solid #aaa;
+    border-radius: 0.5rem;
+}
+
+form button {
+    margin: 1.5rem auto;
+    border: none;
+    background-color: #88f;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.result {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    background-color: #888;
+    width: 80%;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+#hiddenDiv {
+    display: none;
+}
+
+input:focus {
+    border: 0.1rem solid rgb(44, 44, 224);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+input::placeholder {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1500px){
+    .container {
+        min-width: 129rem;
+    }
+
+    .container h1 {
+        font-size: 6rem;
+        margin: 2.5rem 0 4rem;
+    }
+
+    .imcTableContainer { 
+        height: initial;
+        margin: 1rem 0 4rem;
+        font-size: 4.5rem;
+        line-height: 6rem;
+    }
+
+    h3 {
+        font-size: 5rem;
+    }
+
+    .imcCalculator h2 {
+        font-size: 6rem;
+    }
+
+    form label {
+        font-size: 4.5rem;
+    }
+
+    form input, form button {
+        height: 9rem;
+    }
+
+    form input {
+        padding: 0rem 0 0 2rem;
+        font-size: 4.5rem;
+    }
+
+    form button {
+        font-weight: bold;
+        margin: 2.5rem auto;
+        font-size: 4rem;
+        color: #fff;
+        padding: initial;
+    }
+
+    input::placeholder {
+        font-size: 4.5rem;
+    }
+
+    .result {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1050px){
+    .container h1 {
+        margin: 2.8rem 0 1rem;
+    }
+    
+    .imcCalculator h2 {
+        margin: 6rem 0 0;
+    }
+
+    input {
+        font-size: 2rem;
+        padding: 1rem 0 1rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 769px){
+    body {
+        height: 120vh;
+    }
+    .container {
+        height: 117vh;
+    }
+
+    .imc {
+        margin-right: 2vw;
+    }
+}
+
+@media screen and (max-height: 626px) {
+    .imcCalculator h2 {
+        margin: 1rem 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 380px) {
+    body {
+        height: 130vh;
+    }
+    
+    .container {
+        width: 101%;
+        height: 100%;
+        border-radius: initial;
+    }
+
+    .imcCalculator h2 {
+        margin: 5rem 0 0;
+    }
+
+    .container h1 {
+        margin: 1.8rem 0 2rem;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    body {
+        height: 130vh;
+    }
+    
+    .container {
+        width: 101%;
+        height: 100%;
+        border-radius: initial;
+        font-size: 2.5rem;
+    }
+
+    .imcCalculator h2 {
+        margin: 3rem 0 1rem;
+    }
+
+    .container h1 {
+        margin: 1.8rem 0 2rem;
+    }
+
+    .imcTableContainer {
+        font-size: 1.45rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: initial;
+    }
+
+    form input {
+        padding: 0px 0rem 0rem 1rem;
+        font-size: 2.2rem;
+    }
+}
